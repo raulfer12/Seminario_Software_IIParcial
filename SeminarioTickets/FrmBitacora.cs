@@ -26,7 +26,7 @@ namespace SeminarioTickets
 
         private void FrmBitacora_Load(object sender, EventArgs e)
         {
-
+            conexion.Grids("SELECT * FROM Bitacora", dgvBitacora);
         }
     }
 }

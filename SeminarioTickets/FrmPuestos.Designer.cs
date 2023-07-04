@@ -35,8 +35,8 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.dgvPuestos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -103,16 +103,16 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // dataGridView1
+            // dgvPuestos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(359, 118);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 7;
+            this.dgvPuestos.AllowUserToAddRows = false;
+            this.dgvPuestos.AllowUserToDeleteRows = false;
+            this.dgvPuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPuestos.Location = new System.Drawing.Point(359, 118);
+            this.dgvPuestos.Name = "dgvPuestos";
+            this.dgvPuestos.ReadOnly = true;
+            this.dgvPuestos.Size = new System.Drawing.Size(240, 150);
+            this.dgvPuestos.TabIndex = 7;
             // 
             // FrmPuestos
             // 
@@ -120,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPuestos);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.txtID);
@@ -130,7 +130,8 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmPuestos";
             this.Text = "Puestos";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmPuestos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPuestos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,6 +146,6 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPuestos;
     }
 }

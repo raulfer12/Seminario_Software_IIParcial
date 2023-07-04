@@ -18,11 +18,23 @@ namespace SeminarioTickets
         }
         ClsConexion conexion = new ClsConexion();
 
+        private void FrmPuestos_Load(object sender, EventArgs e)
+        {
+            conexion.Grids("SELECT  IdPst AS ID, NomPst AS Puesto FROM Puestos", dgvPuestos);
+        }
+
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             conexion.Modificaciones("exec InsercionesPuestos '" + txtID.Text + "' ,'" + txtNombre.Text + "'");
-            MessageBox.Show("Exito","Unicah", MessageBoxButtons.OK);
+            MessageBox.Show("Datos guardados correctamente","Unicah", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            txtID.Clear();
+            txtNombre.Clear();
+            txtID.Focus();
+
+            conexion.Grids("SELECT IdPst AS ID, NomPst AS Puesto FROM Puestos", dgvPuestos);
 
         }
+
     }
 }

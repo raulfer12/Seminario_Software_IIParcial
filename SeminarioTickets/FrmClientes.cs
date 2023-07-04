@@ -37,7 +37,7 @@ namespace SeminarioTickets
                 genero = 0;
             }
 
-            conexion.Modificaciones("exec InsercionClientes ' " + txtID.Text + " ',' " + txtnombre.Text + " ', '" + txttelefono + "',' " + txtcorreo.Text + " ',' " + txtdir.Text + " ',' " + txtrtn.Text + " ','" + genero + "' ");
+            conexion.Modificaciones("exec InsercionClientes ' " + txtID.Text + " ',' " + txtnombre.Text + " ', '" + txttelefono.Text + "',' " + txtcorreo.Text + " ',' " + txtdir.Text + " ',' " + txtrtn.Text + " ','" + genero + "' ");
 
             MessageBox.Show("Datos Guardados Correctamente","Seminario de Software", MessageBoxButtons.OK,MessageBoxIcon.Information);
 
@@ -50,8 +50,13 @@ namespace SeminarioTickets
 
             txtID.Focus();
 
-            conexion.Grids("SELECT IdCli AS Identidad, NomCli as Nombre, TelCli as Telefono, EmCli as Correo, DirCli as Direccion, RtnCli as RTN,CASE WHEN  GenCli=0 THEN 'Femenino' ELSE 'Masculino' as Genero FROM Clientes", dgvClientes);
+            conexion.Grids("SELECT IdCli AS Identidad, NomCli as Nombre, TelCli as Telefono, EmCli as Correo, DirCli as Direccion, RtnCli as RTN,CASE WHEN  GenCli=1 THEN 'Femenino' ELSE 'Masculino' END as Genero FROM Clientes", dgvClientes);
 
+        }
+
+        private void dgvClientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            conexion.Grids("SELECT * FROM Clientes", dgvClientes);
         }
     }
 }

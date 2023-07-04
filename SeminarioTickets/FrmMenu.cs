@@ -46,5 +46,22 @@ namespace SeminarioTickets
             FrmBitacora frmBitacora = new FrmBitacora();
             frmBitacora.Show();
         }
+
+        private void actToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void nuevoToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FrmPuestos frmPuestos= new FrmPuestos();
+            frmPuestos.Show();
+        }
+
+        private void nuevoToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmEmpleados frmEmpleados = new FrmEmpleados();
+            frmEmpleados.Show();
+        }
     }
 }
