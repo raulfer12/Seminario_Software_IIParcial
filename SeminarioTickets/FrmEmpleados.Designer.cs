@@ -41,21 +41,21 @@
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.cmbGenero = new System.Windows.Forms.ComboBox();
             this.cmbPuesto = new System.Windows.Forms.ComboBox();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
+            this.puestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.seminarioTicketsDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.seminarioTicketsDataSet = new SeminarioTickets.SeminarioTicketsDataSet();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.dgvEmpleados = new System.Windows.Forms.DataGridView();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
-            this.puestosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.puestosTableAdapter = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.PuestosTableAdapter();
             this.btnGuardar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -160,6 +160,9 @@
             // cmbGenero
             // 
             this.cmbGenero.FormattingEnabled = true;
+            this.cmbGenero.Items.AddRange(new object[] {
+            "Femenino",
+            "Masculino"});
             this.cmbGenero.Location = new System.Drawing.Point(255, 357);
             this.cmbGenero.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cmbGenero.Name = "cmbGenero";
@@ -177,6 +180,21 @@
             this.cmbPuesto.Size = new System.Drawing.Size(265, 23);
             this.cmbPuesto.TabIndex = 8;
             this.cmbPuesto.ValueMember = "IdPst";
+            // 
+            // puestosBindingSource
+            // 
+            this.puestosBindingSource.DataMember = "Puestos";
+            this.puestosBindingSource.DataSource = this.seminarioTicketsDataSetBindingSource;
+            // 
+            // seminarioTicketsDataSetBindingSource
+            // 
+            this.seminarioTicketsDataSetBindingSource.DataSource = this.seminarioTicketsDataSet;
+            this.seminarioTicketsDataSetBindingSource.Position = 0;
+            // 
+            // seminarioTicketsDataSet
+            // 
+            this.seminarioTicketsDataSet.DataSetName = "SeminarioTicketsDataSet";
+            this.seminarioTicketsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtID
             // 
@@ -199,16 +217,6 @@
             this.dgvEmpleados.ReadOnly = true;
             this.dgvEmpleados.Size = new System.Drawing.Size(496, 254);
             this.dgvEmpleados.TabIndex = 13;
-            // 
-            // seminarioTicketsDataSetBindingSource
-            // 
-            this.seminarioTicketsDataSetBindingSource.DataSource = this.seminarioTicketsDataSet;
-            this.seminarioTicketsDataSetBindingSource.Position = 0;
-            // 
-            // seminarioTicketsDataSet
-            // 
-            this.seminarioTicketsDataSet.DataSetName = "SeminarioTicketsDataSet";
-            this.seminarioTicketsDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // txtNombre
             // 
@@ -241,11 +249,6 @@
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(265, 25);
             this.txtTelefono.TabIndex = 6;
-            // 
-            // puestosBindingSource
-            // 
-            this.puestosBindingSource.DataMember = "Puestos";
-            this.puestosBindingSource.DataSource = this.seminarioTicketsDataSetBindingSource;
             // 
             // puestosTableAdapter
             // 
@@ -291,10 +294,10 @@
             this.Name = "FrmEmpleados";
             this.Text = "Empleados";
             this.Load += new System.EventHandler(this.FrmEmpleados_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.puestosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpleados)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
