@@ -4,12 +4,12 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SeminarioTicketsConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SeminarioTicketsConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SeminarioTickets.Properties.Settings.GlobalReference.Default.SeminarioTicketsConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SeminarioTicketsConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SeminarioTicketsConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SeminarioTickets.Properties.Settings.GlobalReference.Default.SeminarioTicketsConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BitacorasTableAdapter" GeneratorDataComponentClassName="BitacorasTableAdapter" Name="Bitacoras" UserDataComponentName="BitacorasTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Bitacoras" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Bitacoras" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Bitacoras] WHERE (([IdBit] = @Original_IdBit) AND ([FchBit] = @Original_FchBit) AND ([HrBit] = @Original_HrBit) AND ([EmUsu] = @Original_EmUsu) AND ([TipBit] = @Original_TipBit) AND ([DscBit] = @Original_DscBit))</CommandText>
@@ -77,7 +77,7 @@ SELECT IdBit, FchBit, HrBit, EmUsu, TipBit, DscBit FROM Bitacoras WHERE (IdBit =
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClientesTableAdapter" GeneratorDataComponentClassName="ClientesTableAdapter" Name="Clientes" UserDataComponentName="ClientesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Clientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Clientes" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Clientes] WHERE (([idCli] = @Original_idCli) AND ([NomCli] = @Original_NomCli) AND ([TelCli] = @Original_TelCli) AND ([EmCli] = @Original_EmCli) AND ((@IsNull_DirCli = 1 AND [DirCli] IS NULL) OR ([DirCli] = @Original_DirCli)) AND ((@IsNull_RtnCli = 1 AND [RtnCli] IS NULL) OR ([RtnCli] = @Original_RtnCli)) AND ([GenCli] = @Original_GenCli))</CommandText>
@@ -154,7 +154,7 @@ SELECT idCli, NomCli, TelCli, EmCli, DirCli, RtnCli, GenCli FROM Clientes WHERE 
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpleadosTableAdapter" GeneratorDataComponentClassName="EmpleadosTableAdapter" Name="Empleados" UserDataComponentName="EmpleadosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Empleados" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Empleados" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Empleados] WHERE (([IdEmp] = @Original_IdEmp) AND ([NomEmp] = @Original_NomEmp) AND ([FchNacEmp] = @Original_FchNacEmp) AND ([EmEmp] = @Original_EmEmp) AND ([DirEmp] = @Original_DirEmp) AND ([TelEmp] = @Original_TelEmp) AND ([GenEmp] = @Original_GenEmp) AND ([IdPst] = @Original_IdPst))</CommandText>
@@ -232,7 +232,7 @@ SELECT IdEmp, NomEmp, FchNacEmp, EmEmp, DirEmp, TelEmp, GenEmp, IdPst FROM Emple
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EventosTableAdapter" GeneratorDataComponentClassName="EventosTableAdapter" Name="Eventos" UserDataComponentName="EventosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Eventos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Eventos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Eventos] WHERE (([IdEvt] = @Original_IdEvt) AND ([NomEvt] = @Original_NomEvt) AND ([IdEvn] = @Original_IdEvn) AND ([FchEvt] = @Original_FchEvt) AND ([HrEvt] = @Original_HrEvt) AND ([IdLug] = @Original_IdLug) AND ([CapEvt] = @Original_CapEvt) AND ([ResEvt] = @Original_ResEvt))</CommandText>
@@ -310,7 +310,7 @@ SELECT IdEvt, NomEvt, IdEvn, FchEvt, HrEvt, IdLug, CapEvt, ResEvt FROM Eventos W
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FacturaDetalleTableAdapter" GeneratorDataComponentClassName="FacturaDetalleTableAdapter" Name="FacturaDetalle" UserDataComponentName="FacturaDetalleTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.FacturaDetalle" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.FacturaDetalle" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[FacturaDetalle] WHERE (([NumFac] = @Original_NumFac) AND ([IdTct] = @Original_IdTct) AND ([CantTct] = @Original_CantTct))</CommandText>
@@ -363,7 +363,7 @@ SELECT NumFac, IdTct, CantTct FROM FacturaDetalle WHERE (IdTct = @IdTct) AND (Nu
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="FacturasEncabezadoTableAdapter" GeneratorDataComponentClassName="FacturasEncabezadoTableAdapter" Name="FacturasEncabezado" UserDataComponentName="FacturasEncabezadoTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.FacturasEncabezado" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.FacturasEncabezado" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[FacturasEncabezado] WHERE (([NumFac] = @Original_NumFac) AND ([IdCli] = @Original_IdCli) AND ([IdEmp] = @Original_IdEmp) AND ([FchEmp] = @Original_FchEmp))</CommandText>
@@ -371,7 +371,7 @@ SELECT NumFac, IdTct, CantTct FROM FacturaDetalle WHERE (IdTct = @IdTct) AND (Nu
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_NumFac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumFac" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IdCli" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IdCli" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdEmp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FchEmp" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_FchEmp" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </DeleteCommand>
@@ -383,7 +383,7 @@ SELECT NumFac, IdCli, IdEmp, FchEmp FROM FacturasEncabezado WHERE (NumFac = @Num
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NumFac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumFac" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IdCli" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IdCli" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdEmp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FchEmp" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@FchEmp" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
                     </Parameters>
                   </DbCommand>
                 </InsertCommand>
@@ -401,11 +401,11 @@ SELECT NumFac, IdCli, IdEmp, FchEmp FROM FacturasEncabezado WHERE (NumFac = @Num
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@NumFac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumFac" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@IdCli" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IdCli" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdEmp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@FchEmp" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@FchEmp" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Current" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_NumFac" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="NumFac" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="String" Direction="Input" ParameterName="@Original_IdCli" Precision="0" ProviderType="NVarChar" Scale="0" Size="0" SourceColumn="IdCli" SourceColumnNullMapping="false" SourceVersion="Original" />
                       <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdEmp" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
-                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="StringFixedLength" Direction="Input" ParameterName="@Original_FchEmp" Precision="0" ProviderType="NChar" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Date" Direction="Input" ParameterName="@Original_FchEmp" Precision="0" ProviderType="Date" Scale="0" Size="0" SourceColumn="FchEmp" SourceColumnNullMapping="false" SourceVersion="Original" />
                     </Parameters>
                   </DbCommand>
                 </UpdateCommand>
@@ -421,7 +421,7 @@ SELECT NumFac, IdCli, IdEmp, FchEmp FROM FacturasEncabezado WHERE (NumFac = @Num
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LugaresTableAdapter" GeneratorDataComponentClassName="LugaresTableAdapter" Name="Lugares" UserDataComponentName="LugaresTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Lugares" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Lugares" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Lugares] WHERE (([IdJug] = @Original_IdJug) AND ([NomLug] = @Original_NomLug) AND ([CapLug] = @Original_CapLug))</CommandText>
@@ -474,7 +474,7 @@ SELECT IdJug, NomLug, CapLug FROM Lugares WHERE (IdJug = @IdJug)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="NivelesTableAdapter" GeneratorDataComponentClassName="NivelesTableAdapter" Name="Niveles" UserDataComponentName="NivelesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Niveles" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Niveles" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Niveles] WHERE (([IdNvl] = @Original_IdNvl) AND ([NomNvl] = @Original_NomNvl))</CommandText>
@@ -522,7 +522,7 @@ SELECT IdNvl, NomNvl FROM Niveles WHERE (IdNvl = @IdNvl)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PuestosTableAdapter" GeneratorDataComponentClassName="PuestosTableAdapter" Name="Puestos" UserDataComponentName="PuestosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Puestos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Puestos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Puestos] WHERE (([IdPst] = @Original_IdPst) AND ([NomPst] = @Original_NomPst))</CommandText>
@@ -570,7 +570,7 @@ SELECT IdPst, NomPst FROM Puestos WHERE (IdPst = @IdPst)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TicketsTableAdapter" GeneratorDataComponentClassName="TicketsTableAdapter" Name="Tickets" UserDataComponentName="TicketsTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Tickets" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Tickets" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Tickets] WHERE (([IdTct] = @Original_IdTct) AND ([FchTct] = @Original_FchTct) AND ([IdEvt] = @Original_IdEvt) AND ([IdCli] = @Original_IdCli) AND ([IdUbc] = @Original_IdUbc) AND ([NumUbc] = @Original_NumUbc) AND ([PrcTct] = @Original_PrcTct))</CommandText>
@@ -643,7 +643,7 @@ SELECT IdTct, FchTct, IdEvt, IdCli, IdUbc, NumUbc, PrcTct FROM Tickets WHERE (Id
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TipoEventosTableAdapter" GeneratorDataComponentClassName="TipoEventosTableAdapter" Name="TipoEventos" UserDataComponentName="TipoEventosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.TipoEventos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.TipoEventos" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[TipoEventos] WHERE (([IdEvn] = @Original_IdEvn) AND ([NomEvn] = @Original_NomEvn))</CommandText>
@@ -691,7 +691,7 @@ SELECT IdEvn, NomEvn FROM TipoEventos WHERE (IdEvn = @IdEvn)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UbicacionesTableAdapter" GeneratorDataComponentClassName="UbicacionesTableAdapter" Name="Ubicaciones" UserDataComponentName="UbicacionesTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Ubicaciones" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Ubicaciones" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Ubicaciones] WHERE (([IdUbc] = @Original_IdUbc) AND ([ZonaUbc] = @Original_ZonaUbc))</CommandText>
@@ -739,7 +739,7 @@ SELECT IdUbc, ZonaUbc FROM Ubicaciones WHERE (IdUbc = @IdUbc)</CommandText>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="UsuariosTableAdapter" GeneratorDataComponentClassName="UsuariosTableAdapter" Name="Usuarios" UserDataComponentName="UsuariosTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.Usuarios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.Usuarios" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="false">
                     <CommandText>DELETE FROM [dbo].[Usuarios] WHERE (([EmUsu] = @Original_EmUsu) AND ([ConUsu] = @Original_ConUsu) AND ((@IsNull_CodEnvUsu = 1 AND [CodEnvUsu] IS NULL) OR ([CodEnvUsu] = @Original_CodEnvUsu)) AND ([IdNvl] = @Original_IdNvl) AND ([EstUsu] = @Original_EstUsu))</CommandText>
@@ -802,9 +802,74 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
             </Mappings>
             <Sources />
           </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="BusLugaresTableAdapter" GeneratorDataComponentClassName="BusLugaresTableAdapter" Name="BusLugares" UserDataComponentName="BusLugaresTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.BusLugares" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.BusLugares</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdLug" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Capacidad" DataSetColumn="Capacidad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SelectLugaresTableAdapter" GeneratorDataComponentClassName="SelectLugaresTableAdapter" Name="SelectLugares" UserDataComponentName="SelectLugaresTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.SelectLugares" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.SelectLugares</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Nombre" DataSetColumn="Nombre" />
+              <Mapping SourceColumn="Capacidad" DataSetColumn="Capacidad" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
         </Tables>
         <Sources>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionBitacora" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionBitacora" MethodsParameterType="CLR" Modifier="Public" Name="InsercionBitacora" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsercionBitacora">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.ActLugares" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ActLugares" MethodsParameterType="CLR" Modifier="Public" Name="ActLugares" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="ActLugares">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.ActLugares</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdJug" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="nvarchar" DbType="String" Direction="Input" ParameterName="@NomLug" Precision="0" ProviderType="NVarChar" Scale="0" Size="40" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CapLug" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.DelLugares" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="DelLugares" MethodsParameterType="CLR" Modifier="Public" Name="DelLugares" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="DelLugares">
+            <SelectCommand>
+              <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                <CommandText>dbo.DelLugares</CommandText>
+                <Parameters>
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                  <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdLug" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                </Parameters>
+              </DbCommand>
+            </SelectCommand>
+          </DbSource>
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionBitacora" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionBitacora" MethodsParameterType="CLR" Modifier="Public" Name="InsercionBitacora" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsercionBitacora">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionBitacora</CommandText>
@@ -820,7 +885,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionClientes" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionClientes" MethodsParameterType="CLR" Modifier="Public" Name="InsercionClientes" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsercionClientes">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionClientes" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionClientes" MethodsParameterType="CLR" Modifier="Public" Name="InsercionClientes" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="InsercionClientes">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionClientes</CommandText>
@@ -837,7 +902,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionEmpleados" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionEmpleados" MethodsParameterType="CLR" Modifier="Public" Name="InsercionEmpleados" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="InsercionEmpleados">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionEmpleados" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionEmpleados" MethodsParameterType="CLR" Modifier="Public" Name="InsercionEmpleados" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="InsercionEmpleados">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionEmpleados</CommandText>
@@ -855,7 +920,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionEventos" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionEventos" MethodsParameterType="CLR" Modifier="Public" Name="InsercionEventos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="InsercionEventos">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionEventos" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionEventos" MethodsParameterType="CLR" Modifier="Public" Name="InsercionEventos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="InsercionEventos">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionEventos</CommandText>
@@ -873,7 +938,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionFacturaDetalle" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionFacturaDetalle" MethodsParameterType="CLR" Modifier="Public" Name="InsercionFacturaDetalle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy4" UserSourceName="InsercionFacturaDetalle">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionFacturaDetalle" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionFacturaDetalle" MethodsParameterType="CLR" Modifier="Public" Name="InsercionFacturaDetalle" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="InsercionFacturaDetalle">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionFacturaDetalle</CommandText>
@@ -886,7 +951,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionFacturaEncabezado" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionFacturaEncabezado" MethodsParameterType="CLR" Modifier="Public" Name="InsercionFacturaEncabezado" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy5" UserSourceName="InsercionFacturaEncabezado">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionFacturaEncabezado" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionFacturaEncabezado" MethodsParameterType="CLR" Modifier="Public" Name="InsercionFacturaEncabezado" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="InsercionFacturaEncabezado">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionFacturaEncabezado</CommandText>
@@ -900,7 +965,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionLugares" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionLugares" MethodsParameterType="CLR" Modifier="Public" Name="InsercionLugares" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy6" UserSourceName="InsercionLugares">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionLugares" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionLugares" MethodsParameterType="CLR" Modifier="Public" Name="InsercionLugares" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="InsercionLugares">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionLugares</CommandText>
@@ -913,7 +978,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionNiveles" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionNiveles" MethodsParameterType="CLR" Modifier="Public" Name="InsercionNiveles" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy7" UserSourceName="InsercionNiveles">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionNiveles" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionNiveles" MethodsParameterType="CLR" Modifier="Public" Name="InsercionNiveles" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="InsercionNiveles">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionNiveles</CommandText>
@@ -925,7 +990,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionPUestos" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionPUestos" MethodsParameterType="CLR" Modifier="Public" Name="InsercionPUestos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy8" UserSourceName="InsercionPUestos">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionPUestos" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionPUestos" MethodsParameterType="CLR" Modifier="Public" Name="InsercionPUestos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="InsercionPUestos">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionPUestos</CommandText>
@@ -937,7 +1002,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionTickets" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionTickets" MethodsParameterType="CLR" Modifier="Public" Name="InsercionTickets" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy9" UserSourceName="InsercionTickets">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionTickets" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionTickets" MethodsParameterType="CLR" Modifier="Public" Name="InsercionTickets" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="InsercionTickets">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionTickets</CommandText>
@@ -954,7 +1019,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionTipoEventos" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionTipoEventos" MethodsParameterType="CLR" Modifier="Public" Name="InsercionTipoEventos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy10" UserSourceName="InsercionTipoEventos">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionTipoEventos" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionTipoEventos" MethodsParameterType="CLR" Modifier="Public" Name="InsercionTipoEventos" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="InsercionTipoEventos">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionTipoEventos</CommandText>
@@ -966,7 +1031,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionUbicaciones" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionUbicaciones" MethodsParameterType="CLR" Modifier="Public" Name="InsercionUbicaciones" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy11" UserSourceName="InsercionUbicaciones">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionUbicaciones" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionUbicaciones" MethodsParameterType="CLR" Modifier="Public" Name="InsercionUbicaciones" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy13" UserSourceName="InsercionUbicaciones">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionUbicaciones</CommandText>
@@ -978,7 +1043,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
               </DbCommand>
             </SelectCommand>
           </DbSource>
-          <DbSource ConnectionRef="SeminarioTicketsConnectionString (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionUsuarios" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionUsuarios" MethodsParameterType="CLR" Modifier="Public" Name="InsercionUsuarios" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy12" UserSourceName="InsercionUsuarios">
+          <DbSource ConnectionRef="SeminarioTicketsConnectionString1 (Settings)" DbObjectName="SeminarioTickets.dbo.InsercionUsuarios" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="InsercionUsuarios" MethodsParameterType="CLR" Modifier="Public" Name="InsercionUsuarios" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy14" UserSourceName="InsercionUsuarios">
             <SelectCommand>
               <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                 <CommandText>dbo.InsercionUsuarios</CommandText>
@@ -1146,13 +1211,7 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
                 </xs:simpleType>
               </xs:element>
               <xs:element name="IdEmp" msprop:Generator_ColumnPropNameInRow="IdEmp" msprop:Generator_ColumnPropNameInTable="IdEmpColumn" msprop:Generator_ColumnVarNameInTable="columnIdEmp" msprop:Generator_UserColumnName="IdEmp" type="xs:int" />
-              <xs:element name="FchEmp" msprop:Generator_ColumnPropNameInRow="FchEmp" msprop:Generator_ColumnPropNameInTable="FchEmpColumn" msprop:Generator_ColumnVarNameInTable="columnFchEmp" msprop:Generator_UserColumnName="FchEmp">
-                <xs:simpleType>
-                  <xs:restriction base="xs:string">
-                    <xs:maxLength value="10" />
-                  </xs:restriction>
-                </xs:simpleType>
-              </xs:element>
+              <xs:element name="FchEmp" msprop:Generator_ColumnPropNameInRow="FchEmp" msprop:Generator_ColumnPropNameInTable="FchEmpColumn" msprop:Generator_ColumnVarNameInTable="columnFchEmp" msprop:Generator_UserColumnName="FchEmp" type="xs:dateTime" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -1269,6 +1328,36 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
             </xs:sequence>
           </xs:complexType>
         </xs:element>
+        <xs:element name="BusLugares" msprop:Generator_RowEvHandlerName="BusLugaresRowChangeEventHandler" msprop:Generator_RowDeletedName="BusLugaresRowDeleted" msprop:Generator_RowDeletingName="BusLugaresRowDeleting" msprop:Generator_RowEvArgName="BusLugaresRowChangeEvent" msprop:Generator_TablePropName="BusLugares" msprop:Generator_RowChangedName="BusLugaresRowChanged" msprop:Generator_RowChangingName="BusLugaresRowChanging" msprop:Generator_TableClassName="BusLugaresDataTable" msprop:Generator_RowClassName="BusLugaresRow" msprop:Generator_TableVarName="tableBusLugares" msprop:Generator_UserTableName="BusLugares">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Capacidad" msprop:Generator_ColumnPropNameInRow="Capacidad" msprop:Generator_ColumnPropNameInTable="CapacidadColumn" msprop:Generator_ColumnVarNameInTable="columnCapacidad" msprop:Generator_UserColumnName="Capacidad" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SelectLugares" msprop:Generator_RowEvHandlerName="SelectLugaresRowChangeEventHandler" msprop:Generator_RowDeletedName="SelectLugaresRowDeleted" msprop:Generator_RowDeletingName="SelectLugaresRowDeleting" msprop:Generator_RowEvArgName="SelectLugaresRowChangeEvent" msprop:Generator_TablePropName="SelectLugares" msprop:Generator_RowChangedName="SelectLugaresRowChanged" msprop:Generator_RowChangingName="SelectLugaresRowChanging" msprop:Generator_TableClassName="SelectLugaresDataTable" msprop:Generator_RowClassName="SelectLugaresRow" msprop:Generator_TableVarName="tableSelectLugares" msprop:Generator_UserTableName="SelectLugares">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Nombre" msprop:Generator_ColumnPropNameInRow="Nombre" msprop:Generator_ColumnPropNameInTable="NombreColumn" msprop:Generator_ColumnVarNameInTable="columnNombre" msprop:Generator_UserColumnName="Nombre">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Capacidad" msprop:Generator_ColumnPropNameInRow="Capacidad" msprop:Generator_ColumnPropNameInTable="CapacidadColumn" msprop:Generator_ColumnVarNameInTable="columnCapacidad" msprop:Generator_UserColumnName="Capacidad" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
       </xs:choice>
     </xs:complexType>
     <xs:unique name="Constraint1" msdata:PrimaryKey="true">
@@ -1323,6 +1412,14 @@ SELECT EmUsu, ConUsu, CodEnvUsu, IdNvl, EstUsu FROM Usuarios WHERE (EmUsu = @EmU
     <xs:unique name="Usuarios_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
       <xs:selector xpath=".//mstns:Usuarios" />
       <xs:field xpath="mstns:EmUsu" />
+    </xs:unique>
+    <xs:unique name="BusLugares_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BusLugares" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+    <xs:unique name="SelectLugares_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:SelectLugares" />
+      <xs:field xpath="mstns:ID" />
     </xs:unique>
   </xs:element>
   <xs:annotation>

@@ -233,26 +233,26 @@
             // nuevoToolStripMenuItem4
             // 
             this.nuevoToolStripMenuItem4.Name = "nuevoToolStripMenuItem4";
-            this.nuevoToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.nuevoToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
             this.nuevoToolStripMenuItem4.Text = "Nuevo";
             this.nuevoToolStripMenuItem4.Click += new System.EventHandler(this.nuevoToolStripMenuItem4_Click);
             // 
             // actualizarToolStripMenuItem4
             // 
             this.actualizarToolStripMenuItem4.Name = "actualizarToolStripMenuItem4";
-            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
             this.actualizarToolStripMenuItem4.Text = "Actualizar";
             // 
             // eliminarToolStripMenuItem4
             // 
             this.eliminarToolStripMenuItem4.Name = "eliminarToolStripMenuItem4";
-            this.eliminarToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
             this.eliminarToolStripMenuItem4.Text = "Eliminar";
             // 
             // buscarToolStripMenuItem4
             // 
             this.buscarToolStripMenuItem4.Name = "buscarToolStripMenuItem4";
-            this.buscarToolStripMenuItem4.Size = new System.Drawing.Size(180, 22);
+            this.buscarToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
             this.buscarToolStripMenuItem4.Text = "Buscar";
             // 
             // ubicacionesToolStripMenuItem
@@ -343,6 +343,7 @@
             this.facturaToolStripMenuItem.Name = "facturaToolStripMenuItem";
             this.facturaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.facturaToolStripMenuItem.Text = "Factura";
+            this.facturaToolStripMenuItem.Click += new System.EventHandler(this.facturaToolStripMenuItem_Click);
             // 
             // seguridadToolStripMenuItem
             // 

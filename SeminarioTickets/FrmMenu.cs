@@ -52,5 +52,11 @@ namespace SeminarioTickets
             FrmLugares frmLugares = new FrmLugares();
             frmLugares.Show();
         }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmFacturas frmFacturas = new FrmFacturas();
+            frmFacturas.Show();
+        }
     }
 }

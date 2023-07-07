@@ -32,5 +32,16 @@ namespace SeminarioTickets.Properties {
                 return ((string)(this["SeminarioTicketsConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=PC-GUEVARA\\SQLEXPRESS;Initial Catalog=SeminarioTickets;Integrated Sec" +
+            "urity=True")]
+        public string SeminarioTicketsConnectionString1 {
+            get {
+                return ((string)(this["SeminarioTicketsConnectionString1"]));
+            }
+        }
     }
 }
