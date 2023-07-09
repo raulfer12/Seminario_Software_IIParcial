@@ -48,6 +48,8 @@
             this.usuariosTableAdapter = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.UsuariosTableAdapter();
             this.nivelesTableAdapter = new SeminarioTickets.SeminarioTicketsDataSetTableAdapters.NivelesTableAdapter();
             this.cmbNivel = new System.Windows.Forms.ComboBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.nivelesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).BeginInit();
@@ -173,7 +175,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(307, 291);
+            this.button1.Location = new System.Drawing.Point(179, 296);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 36);
             this.button1.TabIndex = 12;
@@ -205,12 +207,34 @@
             this.cmbNivel.TabIndex = 4;
             this.cmbNivel.ValueMember = "IdNvl";
             // 
+            // btnActualizar
+            // 
+            this.btnActualizar.Location = new System.Drawing.Point(323, 296);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(128, 36);
+            this.btnActualizar.TabIndex = 13;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(468, 296);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(128, 36);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
             // FrmUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(1067, 519);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.cmbNivel);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvUsuarios);
@@ -260,5 +284,7 @@
         private System.Windows.Forms.BindingSource nivelesBindingSource;
         private SeminarioTicketsDataSetTableAdapters.NivelesTableAdapter nivelesTableAdapter;
         private System.Windows.Forms.ComboBox cmbNivel;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
