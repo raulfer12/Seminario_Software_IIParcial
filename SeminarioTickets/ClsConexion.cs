@@ -11,10 +11,12 @@ namespace SeminarioTickets
 {
     internal class ClsConexion
     {
+
+
         public DataSet Consultas( string Comando)
         {
-            DataSet dsa = new DataSet();
             SqlConnection sqlCon = new SqlConnection("Data Source = localhost; Initial Catalog = SeminarioTickets; Integrated Security= true");
+            DataSet dsa = new DataSet();
             sqlCon.Open();
 
             SqlDataAdapter sqlDA = new SqlDataAdapter(Comando, sqlCon);
@@ -29,8 +31,8 @@ namespace SeminarioTickets
 
         public void Grids (string Comando, DataGridView dgv)
         {
-            DataSet dsa = new DataSet();
             SqlConnection sqlCon = new SqlConnection("Data Source = localhost; Initial Catalog = SeminarioTickets; Integrated Security= true");
+            DataSet dsa = new DataSet();            
             SqlDataAdapter sqlDA = new SqlDataAdapter(Comando, sqlCon);
             sqlDA.Fill(dsa, "Tabla");
 
@@ -42,8 +44,9 @@ namespace SeminarioTickets
         }
 
         public bool Modificaciones(string Comando)
-        {
+          {
             SqlConnection sqlCon = new SqlConnection("Data Source = localhost; Initial Catalog = SeminarioTickets; Integrated Security= true");
+   
             SqlCommand sqlCmd = new SqlCommand(Comando, sqlCon);
 
             sqlCon.Open();
