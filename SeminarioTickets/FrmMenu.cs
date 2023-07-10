@@ -63,5 +63,12 @@ namespace SeminarioTickets
             FrmEmpleados frmEmpleados = new FrmEmpleados();
             frmEmpleados.Show();
         }
+
+        private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FacturaDetalle f = new FacturaDetalle();
+            f.Show();
+            this.Hide();
+        }
     }
 }
