@@ -74,6 +74,12 @@
     <Compile Include="FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmFacturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFacturas.Designer.cs">
+      <DependentUpon>FrmFacturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,12 @@
     </Compile>
     <Compile Include="FrmPuestos.Designer.cs">
       <DependentUpon>FrmPuestos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUsuarios.Designer.cs">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,11 +117,17 @@
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturas.resx">
+      <DependentUpon>FrmFacturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPuestos.resx">
       <DependentUpon>FrmPuestos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

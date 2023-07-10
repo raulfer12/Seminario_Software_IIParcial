@@ -35,7 +35,7 @@ namespace SeminarioTickets
             {
                 genero = 0;
             }
-            conexion.Modificaciones("exec InsecionEmpleados '"+txtID.Text+"','"+txtNombre.Text+"', '"+dtpFecha.Value.ToString("yyyy-MM-dd")+"', '"+txtEmail.Text+"', '"+txtDireccion.Text+"', '"+txtTelefono.Text+"', '"+genero+"', '"+cmbPuesto.SelectedValue+"'");
+            conexion.Modificaciones("exec InsercionEmpleados '"+txtID.Text+"','"+txtNombre.Text+"', '"+dtpFecha.Value.ToString("yyyy-MM-dd")+"', '"+txtEmail.Text+"', '"+txtDireccion.Text+"', '"+txtTelefono.Text+"', '"+genero+"', '"+cmbPuesto.SelectedValue+"'");
             MessageBox.Show("Datos fueron guardados correctamente", "UNICAH", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             txtID.Clear();

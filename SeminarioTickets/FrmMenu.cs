@@ -64,11 +64,18 @@ namespace SeminarioTickets
             frmEmpleados.Show();
         }
 
+ ramaRaul
+        private void nuevoToolStripMenuItem9_Click(object sender, EventArgs e)
+        {
+            FrmUsuarios frmUsuarios = new FrmUsuarios();
+            frmUsuarios.Show();
+
         private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FacturaDetalle f = new FacturaDetalle();
             f.Show();
             this.Hide();
+ master
         }
     }
 }
