@@ -118,6 +118,7 @@ namespace SeminarioTickets
                     TxtId.Clear();
                     TxtNombre.Clear();
                     TxtCapacidad.Clear();
+                    TxtId.Enabled = true;
                 }
                 catch (Exception ex)
                 {
@@ -150,6 +151,7 @@ namespace SeminarioTickets
                     TxtId.Clear();
                     TxtNombre.Clear();
                     TxtCapacidad.Clear();
+                    TxtId.Enabled = true;
                 }
                 catch (Exception ex)
                 {
@@ -168,6 +170,8 @@ namespace SeminarioTickets
             TxtId.Text = DgvLugares.CurrentRow.Cells[0].Value.ToString();
             TxtNombre.Text = DgvLugares.CurrentRow.Cells[1].Value.ToString();
             TxtCapacidad.Text = DgvLugares.CurrentRow.Cells[2].Value.ToString();
+
+            TxtId.Enabled = false;
         }
 
         private void TxtBuscar_TextChanged(object sender, EventArgs e)

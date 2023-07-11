@@ -24,16 +24,6 @@ namespace SeminarioTickets
 
         }
 
-        private void configuracioToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void nuevoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmClientes frmClientes = new FrmClientes();
@@ -47,16 +37,16 @@ namespace SeminarioTickets
             frmBitacora.Show();
         }
 
-        private void nuevoToolStripMenuItem4_Click(object sender, EventArgs e)
-        {
-            FrmLugares frmLugares = new FrmLugares();
-            frmLugares.Show();
-        }
-
         private void facturaToolStripMenuItem_Click(object sender, EventArgs e)
         {
             FrmFacturas frmFacturas = new FrmFacturas();
             frmFacturas.Show();
+        }
+
+        private void lugaresToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FrmLugares frmLugares = new FrmLugares();
+            frmLugares.Show();
         }
     }
 }

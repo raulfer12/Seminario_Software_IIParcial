@@ -47,10 +47,6 @@
             this.buscarToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.ticketsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lugaresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.nuevoToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.actualizarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.eliminarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarToolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.ubicacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.actToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -94,7 +90,6 @@
             this.configuracioToolStripMenuItem.Name = "configuracioToolStripMenuItem";
             this.configuracioToolStripMenuItem.Size = new System.Drawing.Size(106, 20);
             this.configuracioToolStripMenuItem.Text = "Configuraciones";
-            this.configuracioToolStripMenuItem.Click += new System.EventHandler(this.configuracioToolStripMenuItem_Click);
             // 
             // clientesToolStripMenuItem
             // 
@@ -107,7 +102,6 @@
             this.clientesToolStripMenuItem.Name = "clientesToolStripMenuItem";
             this.clientesToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.clientesToolStripMenuItem.Text = "Clientes";
-            this.clientesToolStripMenuItem.Click += new System.EventHandler(this.clientesToolStripMenuItem_Click);
             // 
             // nuevoToolStripMenuItem
             // 
@@ -221,39 +215,10 @@
             // 
             // lugaresToolStripMenuItem1
             // 
-            this.lugaresToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoToolStripMenuItem4,
-            this.actualizarToolStripMenuItem4,
-            this.eliminarToolStripMenuItem4,
-            this.buscarToolStripMenuItem4});
             this.lugaresToolStripMenuItem1.Name = "lugaresToolStripMenuItem1";
             this.lugaresToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.lugaresToolStripMenuItem1.Text = "Lugares";
-            // 
-            // nuevoToolStripMenuItem4
-            // 
-            this.nuevoToolStripMenuItem4.Name = "nuevoToolStripMenuItem4";
-            this.nuevoToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
-            this.nuevoToolStripMenuItem4.Text = "Nuevo";
-            this.nuevoToolStripMenuItem4.Click += new System.EventHandler(this.nuevoToolStripMenuItem4_Click);
-            // 
-            // actualizarToolStripMenuItem4
-            // 
-            this.actualizarToolStripMenuItem4.Name = "actualizarToolStripMenuItem4";
-            this.actualizarToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
-            this.actualizarToolStripMenuItem4.Text = "Actualizar";
-            // 
-            // eliminarToolStripMenuItem4
-            // 
-            this.eliminarToolStripMenuItem4.Name = "eliminarToolStripMenuItem4";
-            this.eliminarToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
-            this.eliminarToolStripMenuItem4.Text = "Eliminar";
-            // 
-            // buscarToolStripMenuItem4
-            // 
-            this.buscarToolStripMenuItem4.Name = "buscarToolStripMenuItem4";
-            this.buscarToolStripMenuItem4.Size = new System.Drawing.Size(126, 22);
-            this.buscarToolStripMenuItem4.Text = "Buscar";
+            this.lugaresToolStripMenuItem1.Click += new System.EventHandler(this.lugaresToolStripMenuItem1_Click);
             // 
             // ubicacionesToolStripMenuItem
             // 
@@ -433,10 +398,6 @@
         private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem lugaresToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem actualizarToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem eliminarToolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem buscarToolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem ubicacionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem actToolStripMenuItem;

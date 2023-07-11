@@ -61,7 +61,7 @@
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(148, 39);
-            this.button1.TabIndex = 29;
+            this.button1.TabIndex = 6;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -78,7 +78,7 @@
             this.DgvFactura.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DgvFactura.Name = "DgvFactura";
             this.DgvFactura.Size = new System.Drawing.Size(904, 320);
-            this.DgvFactura.TabIndex = 28;
+            this.DgvFactura.TabIndex = 5;
             // 
             // Ticket
             // 
@@ -111,7 +111,7 @@
             this.CmbCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbCliente.Name = "CmbCliente";
             this.CmbCliente.Size = new System.Drawing.Size(180, 25);
-            this.CmbCliente.TabIndex = 27;
+            this.CmbCliente.TabIndex = 4;
             this.CmbCliente.ValueMember = "idCli";
             // 
             // CmbEmpleado
@@ -124,7 +124,7 @@
             this.CmbEmpleado.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CmbEmpleado.Name = "CmbEmpleado";
             this.CmbEmpleado.Size = new System.Drawing.Size(180, 25);
-            this.CmbEmpleado.TabIndex = 26;
+            this.CmbEmpleado.TabIndex = 3;
             this.CmbEmpleado.ValueMember = "IdEmp";
             // 
             // DtpFecha
@@ -134,7 +134,7 @@
             this.DtpFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DtpFecha.Name = "DtpFecha";
             this.DtpFecha.Size = new System.Drawing.Size(132, 25);
-            this.DtpFecha.TabIndex = 25;
+            this.DtpFecha.TabIndex = 2;
             // 
             // LblNumero
             // 
@@ -144,7 +144,7 @@
             this.LblNumero.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblNumero.Name = "LblNumero";
             this.LblNumero.Size = new System.Drawing.Size(17, 17);
-            this.LblNumero.TabIndex = 24;
+            this.LblNumero.TabIndex = 1;
             this.LblNumero.Text = "0";
             // 
             // label4
@@ -219,7 +219,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(42)))), ((int)(((byte)(77)))));
-            this.ClientSize = new System.Drawing.Size(975, 588);
+            this.ClientSize = new System.Drawing.Size(975, 493);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.DgvFactura);
             this.Controls.Add(this.CmbCliente);
@@ -234,7 +234,8 @@
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmFacturas";
-            this.Text = "FrmFacturas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Factura";
             this.Load += new System.EventHandler(this.FrmFacturas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvFactura)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.seminarioTicketsDataSet)).EndInit();
