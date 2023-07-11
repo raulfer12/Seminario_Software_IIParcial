@@ -33,9 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="PlaceholderTextBox, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\PlaceholderTextBox.1.3.1\lib\PlaceholderTextBox.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -50,12 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsConexion.cs" />
-    <Compile Include="FacturaDetalle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FacturaDetalle.Designer.cs">
-      <DependentUpon>FacturaDetalle.cs</DependentUpon>
-    </Compile>
     <Compile Include="FrmBitacora.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,11 +65,11 @@
     <Compile Include="FrmEmpleados.Designer.cs">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmFacturas.cs">
+    <Compile Include="FrmEventos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmFacturas.Designer.cs">
-      <DependentUpon>FrmFacturas.cs</DependentUpon>
+    <Compile Include="FrmEventos.Designer.cs">
+      <DependentUpon>FrmEventos.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
@@ -92,12 +83,6 @@
     <Compile Include="FrmPuestos.Designer.cs">
       <DependentUpon>FrmPuestos.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmUsuarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmUsuarios.Designer.cs">
-      <DependentUpon>FrmUsuarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SeminarioTicketsDataSet.Designer.cs">
@@ -105,9 +90,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SeminarioTicketsDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FacturaDetalle.resx">
-      <DependentUpon>FacturaDetalle.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FrmBitacora.resx">
       <DependentUpon>FrmBitacora.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,17 +99,14 @@
     <EmbeddedResource Include="FrmEmpleados.resx">
       <DependentUpon>FrmEmpleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmFacturas.resx">
-      <DependentUpon>FrmFacturas.cs</DependentUpon>
+    <EmbeddedResource Include="FrmEventos.resx">
+      <DependentUpon>FrmEventos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPuestos.resx">
       <DependentUpon>FrmPuestos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmUsuarios.resx">
-      <DependentUpon>FrmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -138,7 +117,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
